@@ -38,7 +38,7 @@ function Gameboard() {
 
   for (let i = 0; i < rows; i++) {
     board[i] = [];
-    for (j = 0; j < columns; j++) {
+    for (let j = 0; j < columns; j++) {
       board[i].push(Cell());
     }
   }
@@ -108,8 +108,7 @@ function GameController(name1 = "Player 1", name2 = "Player 2") {
   };
 
   printTurnInfo();
+  const getBoard = () => board.getBoard();
 
-  return { playRound, getActivePlayer };
+  return { playRound, getActivePlayer, getBoard };
 }
-
-const game = GameController();

@@ -1,0 +1,35 @@
+.board {
+  display: grid;
+  height: 500px;
+  width: 500px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 4px;
+  padding: 4px;
+  background-color: #f4d03f; /* connect-4 yellow */
+  border-radius: 6px;
+  border: 2px solid #b7950b;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9e79f;
+  border: 1px solid #c9b04a;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 550px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.turn {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
